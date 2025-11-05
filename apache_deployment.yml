@@ -13,10 +13,10 @@ spec:
         app: apache
     spec:
       containers:
-      - name: supermario
-        image: pengbai/docker-supermario:latest
+      - name: apache
+        image: httpd:2.4
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         resources:
           requests:
             memory: "64Mi"
